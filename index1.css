@@ -1,0 +1,167 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; /* Fuente similar a la de Apple */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1 { font-size: 3.5em; }
+h2 {
+    text-align:left;
+    font-size: 1.5em; /* Ajusta el tamaño según tu preferencia */
+    margin-bottom: 10px; /* Espacio inferior entre el título y la lista */
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    text-align:left; /* Alinea la lista a la izquierda */
+}
+
+li {
+    margin-bottom: 8px; /* Espacio entre cada elemento de la lista */
+    line-height: 1.8; /* Controla el interlineado */
+}
+
+/* Añade estilos adicionales según sea necesario */
+
+
+/* Botones */
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(179, 1, 1); /* Negro como color base */
+    cursor: pointer; /* Agregado para indicar que es un botón */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+    
+}
+
+button:hover {
+    background-color: #333; /* Oscurecer el color al pasar el ratón */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; /* Agregamos padding a los lados */
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0;
+}
+
+header .logo {
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: firebrick;
+    font-size: 3.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+header a:hover {
+    color: darkgoldenrod;
+}
+
+/* Sección principal */
+#hero {
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+#hero p {
+    width: 80%; /* Ancho del párrafo */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+    padding: 10px; /* Espacio interno dentro del párrafo */
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Interlineado */
+  }
+  
+
+/* Estilos adicionales para resaltar el texto */
+#hero p strong {
+    color: #FF5733; /* Color de texto destacado */
+    font-weight: bold; /* Negrita */
+}
+
+#hero p em {
+    font-style: italic; /* Cursiva */
+}
+
+#hero p::first-letter {
+    font-size: 120%; /* Tamaño de la primera letra */
+}
+
+/* Estilos para contenido interactivo */
+.interactive-content {
+    padding: 50px;
+}
+
+.interactive-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.interactive-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify; /* Justificar texto */
+    padding: 0 20px; /* Agregamos padding a los lados */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilos para los párrafos */
+p {
+    width: 80%; /* Ancho del párrafo */
+    margin: 20px auto; /* Margen superior e inferior */
+    padding: 10px; /* Espacio interno dentro del párrafo */
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Interlineado */
+}
+
