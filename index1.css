@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1 { font-size: 3.5em; }
+h2 {
+    text-align:left;
+    font-size: 1.5em; 
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    text-align:left; 
+}
+
+li {
+    margin-bottom: 8px; 
+    line-height: 1.8; 
+}
+
+
+
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:firebrick; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    
+}
+
+button:hover {
+    background-color: #333; 
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; 
+}
+
+
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0;
+}
+
+header .logo {
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: firebrick;
+    font-size: 3.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+header a:hover {
+    color: darkgoldenrod;
+}
+
+/* Sección principal */
+#hero {
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+#hero p {
+    width: 80%; /* Ancho del párrafo */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+    padding: 10px; /* Espacio interno dentro del párrafo */
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Interlineado */
+  }
+  
+
+/* Estilos adicionales para resaltar el texto */
+#hero p strong {
+    color: #FF5733; /* Color de texto destacado */
+    font-weight: bold; /* Negrita */
+}
+
+#hero p em {
+    font-style: italic; /* Cursiva */
+}
+
+#hero p::first-letter {
+    font-size: 120%; /* Tamaño de la primera letra */
+}
+
+/* Estilos para contenido interactivo */
+.interactive-content {
+    padding: 50px;
+}
+
+.interactive-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.interactive-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify; 
+    padding: 0 20px; 
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilos para los párrafos */
+p {
+    width: 80%; /* Ancho del párrafo */
+    margin: 20px auto; /* Margen superior e inferior */
+    padding: 10px; /* Espacio interno dentro del párrafo */
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Interlineado */
+}

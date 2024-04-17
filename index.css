@@ -1,0 +1,155 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; /* Fuente similar a la de Apple */
+    margin: 0;
+    padding: 0;
+
+        background-image: linear-gradient(
+            0deg,
+            rgba(101, 101, 101, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ), url("a.jpg");
+        background-size: cover; /* Para que la imagen cubra todo el fondo */
+        background-repeat: no-repeat; /* Para que la imagen no se repita */
+        background-attachment: fixed; /* Para fijar la imagen al fondo */
+    }
+
+    
+
+
+/* Encabezados */
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2em; }
+
+/* Párrafos y Listas */
+p, li {
+    font-size: 1em;
+    line-height: 1.5; /* Ajusta el interlineado */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    max-width: 800px; /* Establece el ancho máximo del texto */
+}
+ul { list-style: none; }
+
+ul li {
+    font-size: 18px; /* Cambia el tamaño del texto según sea necesario */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Botones */
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: black; /* Negro como color base */
+    cursor: pointer; /* Agregado para indicar que es un botón */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+button:hover {
+    background-color: #333; /* Oscurecer el color al pasar el ratón */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; /* Agregamos padding a los lados */
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0;
+}
+
+header .logo {
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: firebrick;
+    font-size: 3.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+header a:hover {
+    color: darkgoldenrod;
+}
+
+/* Sección principal */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(101, 101, 101, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ), url(".jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para contenido interactivo */
+.interactive-content {
+    padding: 50px;
+}
+
+.interactive-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.interactive-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify; /* Justificar texto */
+    padding: 0 20px; /* Agregamos padding a los lados */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
