@@ -13,7 +13,7 @@ body {
             0deg,
             rgba(101, 101, 101, 0.5),
             rgba(255, 255, 255, 0.5)
-        ), url("a.jpg");
+        ), url("b.jpg");
         background-size: cover; /* Para que la imagen cubra todo el fondo */
         background-repeat: no-repeat; /* Para que la imagen no se repita */
         background-attachment: fixed; /* Para fijar la imagen al fondo */
